@@ -1,122 +1,232 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-/*SECCION NAVEGACION*/
-header{
-    background: rgba(0, 0, 0, 0.2);
+
+
+/* Barra de Navehacion */
+header {
+    background: rgba(255, 255, 255, 0);
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 100;
     font-family: sans-serif;
 }
-nav ul{
+
+nav ul {
     font-size: 1.1rem;
     margin-left: 5rem;
 }
-nav li{
+
+nav li {
     display: inline-block;
     padding: 20px 0;
 }
-nav li a{
-   color: #000;
-   text-decoration: none;  
-   margin: 0 15px;
+
+nav li a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
 }
-nav #ss{
+
+nav #ss {
+    position: absolute;
+    left: calc(50% - 41px);
     font-size: 1.5rem;
     font-weight: 800;
-    margin-left: 15%;
 }
-p{
-    margin-bottom: 20px;
+
+
+/* -----Seccion contenido----- */
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    position: relative;
 }
-/* nav{
-    float:left;
+
+.contenido .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.851);
 }
-nav ul{
-    list-style: none;
+
+.contenido .text h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-top: 25%;
+}
+
+.contenido .text h2 {
+    font-weight: 100;
+}
+
+.circulos {
+    display: flex;
+    position: relative;
     overflow: hidden;
 }
-nav ul li{
-    float: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-nav ul li a{
-    display: block;
-    padding: 20px;
-    color: black;
-    text-decoration: none;
-}
- */
-/*SECCION CONTENIDO*/
-.contenido{
-    height: 100vh;
-    padding-top: 60px;
-    overflow: hidden;
-}
-.circle1{
-    width: 700px;
-    height:700px;
+
+.circle1 {
+    position: absolute;
+    width: 43.75rem;
+    height: 43.75rem;
     border-radius: 50%;
     background-color: rgba(149, 69, 202, 0.6);
-    position: absolute;
-
     top: -15%;
-    left: 62%;
+    left: 25%;
 }
-.circle2{
-    width: 65px;
-    height: 65px;
+
+.circle2 {
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     background-color: skyblue;
     position: absolute;
-
-    top: 85%;
-    left: 75%;
+    top: 84%;
+    left: 44%;
 }
-.circle3{
-    width: 65px;
-    height: 65px;
+
+.circle3 {
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     background-color: rgba(255, 170, 0, 0.5);
     position: absolute;
-
-    top: 60%;
-    left: 60%;
-}
-.contenido .text{
-    position: absolute;
     top: 50%;
-    left: 12%;
+    left: 15%;
+}
+.shoes{
+    width: 30rem;
+    height: 20rem;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    background-image: url(/img/shoes.jpg);
+    background-size: cover;
+    border-radius: 8px;
+    transform: perspective(500px) rotate3d(0, 1, -1, 10deg);
+    box-shadow: rgb(150,150,150) 5px 5px 10px; 
+
+}
+
+
+/* -----Seccion Sneakers----- */
+.conteni2 {
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.contenido .text h1{
-    font-size: 5rem;
-    font-weight: 800;
+
+.conteni2 .cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.contenido .text h2{
-    font-weight: 100;   
+
+.cont .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: solid rgba(204, 204, 204, 0.4) 1.5px;;
+    overflow: hidden;
 }
-.contenido2{
-    width: 80%;
-    margin: auto;
-    font-family: sans-serif;
+.cont .card img{
+    width: 500px;
+    height: 400px;
+    background-size: cover;
 }
-.contenido2 h1{
+
+.cont .card h4, img, a{
+    padding-bottom: 1.5rem;
+}
+.conteni2 h1{
+    align-self: flex-start;
+    margin-left: 2rem;
     font-size: 3rem;
     font-weight: 700;
 }
 
-/* SECCION FOOTER */
-footer{
+.conteni2 h3 span{
+    font-weight: bolder;
+}
+
+.conteni2 a {
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(149, 69, 202);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* -----Seccion Slider----- */
+.slider{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+.contn{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.contn button{
+    width: 4rem;
+    background-color: transparent;
+    border: none   ;
+    cursor: pointer;
+}
+.contn button:focus{
+    outline: 0;
+}
+.contn h1{
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.card-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-img #imagen{
+    width: 50%;
+    height: 470px;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+.card-img a {
+    width: 25%;
+    padding: 15px;
+    background-color: rgb(149, 69, 202);
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* -----Footer----- */
+footer {
     font-family: sans-serif;
     background: rgb(21, 21, 31);
     overflow: hidden;
 }
-footer h1{
+footer h1 {
     color: #fff;
     font-size: 2.5rem;
     font-weight: 600;
@@ -124,32 +234,32 @@ footer h1{
     padding: 15px;
     margin-bottom: 30px;
 }
- .nv ul{
-     text-align: center;
-     margin-bottom: 30px;
-     font-size: 1.1rem;
-     font-weight: normal;
- }
- .nv li{
-     display: inline-block;
-     margin: 10px 10px;
+.nv ul {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    font-weight: normal;
 }
-.nv li a{
+.nv li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+.nv li a {
     color: #ccc;
     text-decoration: none;
 }
-.linea{
+.linea {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
 }
-.linea .lin{
+.linea .lin {
     width: 75%;
     height: 1px;
     border-top: solid rgba(204, 204, 204, 0.4) 1.5px;
 }
-footer p{
+footer p {
     margin-left: 12.5%;
     color: #CCC;
     padding-bottom: 3rem;
