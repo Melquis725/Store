@@ -1,91 +1,142 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Store</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Shop</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li id="ss"><a href="#">S S .</a></li>
+
+    <header class="header">
+        <nav class="nav_container">
+            <h3 class="title_logo">Shoes<span>Store</span></h3>
+            <ul class="menu" id="menu">
+                <div class="menu_cont">
+                    <li class="links"><a class="items active" href="#">Inicio</a></li>
+                    <li class="links"><a class="items" href="#tienda">Tienda</a></li>
+                    <li class="links"><a class="items" href="#nuevos">Nuevos</a></li>
+                    <li class="links"><a class="items" href="#">Nosotros</a></li>
+                    <li class="links"><a class="items" href="#">Contacto</a></li>
+                </div>
+                <div class="movil_title_logo">
+                    <h3 class="title_logo">Shoes<span>Store</span></span></h3>
+                </div>
             </ul>
+            <div class="icon_bar">
+                <img class="icon" id="icon" src="svg/burger-icon.svg" alt="">
+            </div>
         </nav>
     </header>
-    <section class="contenido">
-        <div class="text">
-            <h1>Shoes Store</h1>
-            <h2>El mejor sitio para comprar tus deportivos.</h2>
-        </div>
-        <div class="circulos">
-            <div class="circle1"></div>
-            <div class="circle2"></div>
-            <div class="circle3"></div>
-            <div class="shoes"></div>
+
+    <section class="primer_section">
+        <img src="img/motion-2.jpg" class="main_img" alt="">
+        <div class="info_container">
+            <h2 class="info_subtitle">El mejor sitio para comprar tus Sneaker</h2>
+            <h1 class="info_title">Disfruta Caminar</h1>
+            <p class="info_texto">Encuentra aquí los sneakers que buscas.</p>
         </div>
     </section>
-    <section class="conteni2">
-        <h1>Sneakers</h1>
-        <div class="cont">
+
+    <section class="sneakers_section" id="tienda">
+        <h1 class="sneaker_title">Sneakers</h1>
+        <div class="cards">
             <div class="card">
-                <h3><span>Nike</span> - Air max 97</h3>
-                <img src="/img/air-max-97.jpg" alt="">
+                <h3><span>Nike</span> - motion 2</h3>
+                <img src="img/motion-2.jpg" class="card_img" alt="">
                 <a href="">Adquirir</a>
             </div>
             <div class="card">
-                <h3><span>Nike</span> - Motion 2</h3>
-                <img src="img/motion-2.jpg" alt="">
+                <h3><span>Nike</span> - motion 2</h3>
+                <img src="img/motion-2.jpg" class="card_img" alt="">
                 <a href="">Adquirir</a>
             </div>
             <div class="card">
-                <h3><span>Nike</span> - Air max 97</h3>
-                <img src="img/air-max-97.jpg" alt="">
+                <h3><span>Nike</span> - motion 2</h3>
+                <img src="img/air-max-97.jpg" class="card_img" alt="">
                 <a href="">Adquirir</a>
             </div>
             <div class="card">
-                <h3><span>Nike</span> - Motion 2</h3>
-                <img src="img/motion-2.jpg" alt="">
+                <h3><span>Nike</span> - motion 2</h3>
+                <img src="img/air-max-97.jpg" class="card_img" alt="">
                 <a href="">Adquirir</a>
             </div>
         </div>
     </section>
-    <section class="slider">
-        <div class="contn">
+
+    <section class="slider" id="nue">
+        <div class="slider_elements">
             <h1>Nuevos</h1>
-            <div class="img">
-                <button id="retroceder"><img src="/img/leftarrow.svg" alt=""></button>
-                <button id="avanzar"><img src="/img/rightarrow.svg" alt=""></button>
+            <div class="svg">
+                <button id="retroceder"><img src="svg/leftarrow.svg" alt=""></button>
+                <button id="avanzar"><img src="svg/rightarrow.svg" alt=""></button>
             </div>
         </div>
-        <div class="card-img">
-            <div id="imagen"></div>
-            <a href="">Ver más</a>
+        <div class="slider_img">
+            <img src="" class="imagen" alt="">
+            <a href="#">Ver más</a>
         </div>
     </section>
-    <footer>
-        <h1>s s .</h1>
-        <div class="nv">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Politica de Privacidad</a></li>
-            </ul>
+
+    <footer class="footer">
+        <div class="footer_title">
+            <h1>Shoes Store</h1>
+            <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam
+                esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus
+                libero ipsam.</p>
         </div>
-        <div class="linea"><div class="lin"></div></div>
-        <p>&copy; 2022 Shoes Store.Todos los derechos reservados.</p>
+            <div class="contact">
+                <div class="contact_svg">
+                    <div class="location cont">
+                        <a href="#">
+                            <img src="svg/location.svg" class="location" alt="">
+                        </a>
+                        <p>Somoto, Madriz</p>
+                    </div>
+                    <div class="email cont">
+                        <a href="#">
+                            <img src="svg/email.svg" class="email" alt="">
+                        </a>
+                        <p>micorreo@email.com</p>
+                    </div>
+                    <div class="phone cont">
+                        <a href="#">
+                            <img src="svg/phone.svg" class="phone" alt="">
+                        </a>
+                        <p>+505 87654321</p>
+                    </div>
+                </div>
+                <div class="opening_hours">
+                    <h3>Todos los dias</h3>
+                    <p>8:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        <div class="linea">
+            <div class="lin"></div>
+        </div>
+        <div class="info_final">
+            <div class="rights">
+                <p>&copy Shoes Store. Todos los derechos reservados.</p>
+            </div>
+            <div class="logos_follow">
+                <a href="">
+                    <img src="svg/facebook.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="svg/instagram.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="svg/twitter.svg" alt="">
+                </a>
+            </div>
+        </div>
+
     </footer>
 
-    <script src="/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
