@@ -11,6 +11,7 @@
 
 <body>
 
+    <!-- Navegacion-->
     <header class="header">
         <nav class="nav_container">
             <h3 class="title_logo">Shoes<span>Store</span></h3>
@@ -19,8 +20,8 @@
                     <li class="links"><a class="items active" href="#">Inicio</a></li>
                     <li class="links"><a class="items" href="#tienda">Tienda</a></li>
                     <li class="links"><a class="items" href="#nuevos">Nuevos</a></li>
-                    <li class="links"><a class="items" href="#">Nosotros</a></li>
-                    <li class="links"><a class="items" href="#">Contacto</a></li>
+                    <li class="links"><a class="items" href="#footer">Nosotros</a></li>
+                    <li class="links"><a class="items" href="#footer">Contacto</a></li>
                 </div>
                 <div class="movil_title_logo">
                     <h3 class="title_logo">Shoes<span>Store</span></span></h3>
@@ -32,8 +33,9 @@
         </nav>
     </header>
 
+
+    <!-- Primera Seccion -->
     <section class="primer_section">
-        <img src="img/motion-2.jpg" class="main_img" alt="">
         <div class="info_container">
             <h2 class="info_subtitle">El mejor sitio para comprar tus Sneaker</h2>
             <h1 class="info_title">Disfruta Caminar</h1>
@@ -41,79 +43,109 @@
         </div>
     </section>
 
+
+    <!-- Sneakers Seccion -->
     <section class="sneakers_section" id="tienda">
         <h1 class="sneaker_title">Sneakers</h1>
         <div class="cards">
             <div class="card">
+                <div class="vertical"></div>
                 <h3><span>Nike</span> - motion 2</h3>
-                <img src="img/motion-2.jpg" class="card_img" alt="">
-                <a href="">Adquirir</a>
+                <div class="cont_img">
+                    <img src="img/motion-2.jpg" class="card_img" alt="">
+                </div>
+                <div class="btn_card">
+                    <img src="svg/cart.svg" alt="">
+                    <a href="">Adquirir</a>
+                </div>
             </div>
             <div class="card">
                 <h3><span>Nike</span> - motion 2</h3>
-                <img src="img/motion-2.jpg" class="card_img" alt="">
-                <a href="">Adquirir</a>
+                <div class="cont_img">
+                    <img src="img/motion-2.jpg" class="card_img" alt="">
+                </div>
+                <div class="btn_card">
+                    <img src="svg/cart.svg" alt="">
+                    <a href="">Adquirir</a>
+                </div>
             </div>
             <div class="card">
                 <h3><span>Nike</span> - motion 2</h3>
-                <img src="img/air-max-97.jpg" class="card_img" alt="">
-                <a href="">Adquirir</a>
+                <div class="cont_img">
+                    <img src="img/air-max-97.jpg" class="card_img" alt="">
+                </div>
+                <div class="btn_card">
+                    <img src="svg/cart.svg" alt="">
+                    <a href="">Adquirir</a>
+                </div>
             </div>
             <div class="card">
                 <h3><span>Nike</span> - motion 2</h3>
-                <img src="img/air-max-97.jpg" class="card_img" alt="">
-                <a href="">Adquirir</a>
+                <div class="cont_img">
+                    <img src="img/air-max-97.jpg" class="card_img" alt="">
+                </div>
+                <div class="btn_card">
+                    <img src="svg/cart.svg" alt="">
+                    <a href="">Adquirir</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="slider" id="nue">
+
+    <!-- Slider Seccion -->
+    <section class="slider" id="nuevos">
         <div class="slider_elements">
             <h1>Nuevos</h1>
+            <span></span>
             <div class="svg">
                 <button id="retroceder"><img src="svg/leftarrow.svg" alt=""></button>
                 <button id="avanzar"><img src="svg/rightarrow.svg" alt=""></button>
             </div>
         </div>
-        <div class="slider_img">
+        <div class="slider_img" >
             <img src="" class="imagen" alt="">
             <a href="#">Ver más</a>
         </div>
     </section>
 
-    <footer class="footer">
+
+    <!-- Footer Seccion -->
+    <footer class="footer" id="footer">
         <div class="footer_title">
             <h1>Shoes Store</h1>
             <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam
                 esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus
                 libero ipsam.</p>
         </div>
-            <div class="contact">
-                <div class="contact_svg">
-                    <div class="location cont">
-                        <a href="#">
-                            <img src="svg/location.svg" class="location" alt="">
-                        </a>
-                        <p>Somoto, Madriz</p>
-                    </div>
-                    <div class="email cont">
-                        <a href="#">
-                            <img src="svg/email.svg" class="email" alt="">
-                        </a>
-                        <p>micorreo@email.com</p>
-                    </div>
-                    <div class="phone cont">
-                        <a href="#">
-                            <img src="svg/phone.svg" class="phone" alt="">
-                        </a>
-                        <p>+505 87654321</p>
-                    </div>
+        <div class="contact">
+            <div class="contact_svg">
+                <h2>Contacto</h2>
+                <div class="location cont">
+                    <a href="#">
+                        <img src="svg/location.svg" class="location" alt="">
+                    </a>
+                    <p>Somoto, Madriz</p>
                 </div>
-                <div class="opening_hours">
-                    <h3>Todos los dias</h3>
-                    <p>8:00 AM - 5:00 PM</p>
+                <div class="email cont">
+                    <a href="#">
+                        <img src="svg/email.svg" class="email" alt="">
+                    </a>
+                    <p>micorreo@email.com</p>
+                </div>
+                <div class="phone cont">
+                    <a href="#">
+                        <img src="svg/phone.svg" class="phone" alt="">
+                    </a>
+                    <p>+505 87654321</p>
                 </div>
             </div>
+            <div class="opening_hours">
+                <h2>Horario de atención</h2>
+                <h3>Todos los dias</h3>
+                <p>8:00 AM - 5:00 PM</p>
+            </div>
+        </div>
         <div class="linea">
             <div class="lin"></div>
         </div>
